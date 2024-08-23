@@ -1,0 +1,211 @@
+.header {
+     display: flex;
+     width: 100%;
+     height:92px;
+     background-color: #010114;
+}
+
+.header-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+     height: 100%;
+}
+
+.logo_tablet{
+      display: none;
+}
+
+.navigation{
+     display: flex;
+     align-items: center;
+     gap: 82px;
+}
+
+
+.nav-list{
+     display: flex;
+     gap: 14px;
+}
+
+
+.navbar {
+     background-color: #333;
+     padding: 10px;
+}
+
+.nav-list {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+.nav-item {
+     position: relative;
+}
+
+.nav-item a {
+     color: #fff;
+     text-decoration: none;
+     padding: 10px 15px;
+     display: block;
+}
+
+.dropdown-toggle_img{
+
+     filter: brightness(0) invert(1);
+     width: 12px;
+     height: 12px;
+}
+
+
+.dropdown-menu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     min-width: 160px;
+     z-index: 1000;
+}
+
+.dropdown-menu li {
+     list-style: none;
+}
+
+.dropdown-menu li a {
+     color: #333;
+     padding: 10px 15px;
+     display: block;
+     text-decoration: none;
+}
+
+
+.dropdown-menu li a:hover {
+     background-color: #f0f0f0;
+}
+
+
+.nav-item:hover .dropdown-menu {
+     display: block;
+}
+
+.nav-list > .nav-item a {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 24px;
+     font-family: poppins;
+     cursor: pointer;
+}
+
+.logo {
+      width: 118px;
+      height: 50px;
+      cursor: pointer;
+}
+.contact-info{
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 24px;
+     font-family: poppins;
+}
+
+.phone-icon{
+     width: 24px;
+     height: 24px;
+
+}
+.nav-item a{
+      color: #fff ;
+}
+
+.contact-book{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 120px;
+     height: 54px;
+     border: 1px solid #FFFFFF;
+
+}
+
+.search-input-icon{
+     display: none;
+}
+
+.contact-book p{
+     text-align: center;
+     height: 25px;
+     font-family: Poppins;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 24px;
+     color: #FFFFFF;
+}
+.header-hamburger-menu , .contact-book{
+      display: none;
+}
+
+@media only screen and  (max-width: 769px){
+     .navigation{
+          display: none;
+          position: absolute;
+          top: 15vh;
+          left: 0;
+          padding: 10px;
+          background-color: #010114;
+          z-index: 1100;
+          height: 85vh;
+     }
+     .navigation .logo{
+           display: none;
+     }
+     .logo_tablet{
+          display: block;
+     }
+
+     .header-hamburger-menu{
+          display: block;
+     }
+
+     .nav-item{
+          font-size: 10px;
+     }
+     .navigation.show {
+          display: flex; /* Make sure the navigation shows when toggled */
+          flex-direction: column;
+          gap: 0; /* Adjust gap if needed */
+     }
+
+     .nav-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0; /* Adjust gap if needed */
+     }
+}
+
+@media only screen and  (max-width: 640px){
+     .contact-info{
+          display: none;
+     }
+
+     .search-input-icon{
+          display: block;
+          cursor: pointer;
+     }
+
+     .contact-book{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+
+
+}

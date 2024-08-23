@@ -1,0 +1,59 @@
+.appointment-section{
+    width: 100%;
+    height: 105px;
+    border: 1px none #EDEDED;
+    border-bottom-style: solid;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.appointment-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appointment-title{
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 252px;
+    height: 56px;
+    padding: 10px;
+    border: 1px  solid #CED4DA;
+    gap: 15px;
+}
+
+.search-input{
+    border: none;
+    outline: none;
+}
+
+
+.search-input {
+    width: 100%;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+.search-input::placeholder {
+    color: #B1B1B1;
+}
+
+@media only screen and  (max-width: 640px){
+    .appointment-section{
+        display: none;
+    }
+
+}

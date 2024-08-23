@@ -1,0 +1,118 @@
+.accordion {
+    margin: 20px;
+    font-family: Poppins;
+    display: none;
+}
+.accordion-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #010114;
+    background-color: #FFFFFF;
+    padding: 24px 24px 48px 24px;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-content-sub{
+    background-color:  #F1F1F1;
+    border: none;
+}
+
+.accordion-button , .accordion-txt , .accordion-sub-button  , .level_three , .accordion-sub-devices {
+    width: 100%;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    background-color: #F1F1F1;
+    padding:  12px 24px 12px 24px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.accordion-sub-button , .accordion-txt {
+    background-color: #FFF;
+}
+
+.accordion-button:after {
+    content: url('../assets/images/icons/arrowDown.svg');
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+.accordion-sub-button:after{
+    content: url('../assets/images/icons/arrowDown.svg');
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.accordion-sub-button.active:after {
+    content:  url('../assets/images/icons/arrowDown.svg');
+    transform: rotate(-180deg);
+
+
+}
+.accordion-button.active:after {
+    content:  url('../assets/images/icons/arrowUp.svg');
+
+}
+
+.accordion-button.active {
+    background-color: black;
+    color: white;
+}
+
+.accordion-sub-button.active {
+    background-color: #F1F1F1;
+}
+
+
+
+
+.accordion-item{
+    margin-bottom: 15px;
+}
+
+
+
+.level_three:after {
+    content:  url('../assets/images/icons/arrowDown.svg');
+    font-size: 13px;
+    color: #777;
+    float: right;
+}
+
+.level_three.active:after {
+    content:  url('../assets/images/icons/arrowDown.svg');
+    transform: rotate(-180deg);
+}
+
+.level_three.active {
+    background-color: #F1F1F1;
+}
+
+.accordion-sub-devices{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    padding-left: 36px;
+
+}
+
+.accordion-content,
+.accordion-content-sub,
+.accordion-content-devices {
+    display: none;
+}
+
+@media only screen and  (max-width: 640px){
+    .accordion{
+        display: block;
+    }
+
+}
+
+
